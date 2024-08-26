@@ -1,0 +1,188 @@
+:root{
+    --curve: 5px;
+    --veryLightGray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --darkGray: hsl(0, 0%, 33%);
+    --veryDarkGray: hsl(0, 0%, 30%);
+}
+
+*{box-sizing: border-box;}
+
+html, body{
+    background-color: var(--veryLightGray);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header.js Start */
+
+.nav-title{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav-container{
+    background-color: var(--white);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    padding: 14px 0;
+    margin-bottom: 32px;
+}
+
+.dark-mode-background{
+    background-color: var(--veryDarkGray);
+    color: white;
+}
+
+.dark-mode-btn{
+    color: white;
+}
+
+.dark-mode{
+    background-color: var(--darkGray);
+    color: white;
+}
+
+/* Header.js End */
+
+/* Countries.js Start */
+
+/* Removes big outlines from bootstrap on forms in header */
+.me-2:focus,
+.form-select:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.search-bar input{
+    padding-left: 33px;
+}
+.search-bar{
+    position: relative;
+}
+.search-bar-icon{
+    position: absolute;
+    margin-top: -27px;
+    margin-left: 10px;
+}
+
+.img-sizing{
+    height: 140px;
+    width: 100%;
+    object-fit: fill;
+    border-top-left-radius: var(--curve);
+    border-top-right-radius: var(--curve);
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.box{
+    border-radius: var(--curve);
+    background-color: var(--white);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+    width: 85%;
+}
+
+.box:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.text-box{
+    margin: 15px 15px;
+    /* border: 1px solid #000; */
+}
+
+.text-box .bold-title{
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.text-box .bold{
+    font-weight: 600;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.text-box .text{
+    font-size: 14px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.region-dropdown{
+    width: auto;
+    align-items: end;
+}
+
+.dropdown-form{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+
+.back-btn{
+    background-color: var(--white);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin: 10px;
+    padding: 5px 15px;
+}
+
+.back-btn:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.single-flag-img{
+    width: 100%;
+    aspect-ratio: 15/10;
+}
+
+.border-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.country-border{
+    background-color: var(--white);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.country-border:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.dark-mode-form{
+    color: white;
+    background-color: var(--darkGray);
+    border: none;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode-form:focus{
+    color: white;
+    background-color: var(--darkGray);
+    border: none;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Countries.js End */
+
+
